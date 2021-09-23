@@ -107,3 +107,17 @@ EJS                       là view engine để làm giao diện hiển thị
 
 <%- %>                    gọi biến và chuyển sang html nếu đc
 <%= %>                    gọi biến 
+
+mongoAtlas
+network access            0.0.0.0/0
+copylink connect
+<password>                thay bằng pass của cluster
+myFirstDatabase           thay bằng tên DB của dự án
+
+heroku                    free 4-5 project cùng lúc (quá thì xóa cái cũ đi)
+buildpack                 nodejs
+deploy                    Deploy Branch
+
+fix để deploy
+app.js                    "start": "node app.js"
+app.listen                process.env.PORT || 3000
